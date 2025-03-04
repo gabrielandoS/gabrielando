@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabrielando por Aí - Roteiro Noroeste da Argentina</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero {
+            height: 100vh;
+            background: url('Gabrielando-identidadevisual.png') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .arrow {
+            position: absolute;
+            font-size: 50px;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 1s infinite;
+            cursor: pointer;
+            color: red;
+        }
+        .arrow i {
+            color: red;
+            font-size: 40px;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translate(-50%, 0);
+            }
+            50% {
+                transform: translate(-50%, 10px);
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .text-box {
+            width: 60%;
+        }
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .button-container {
+            text-align: center;
+            width: 30%;
+        }
+        .download-btn {
+            background: #0073e6;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .download-btn:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="arrow" onclick="document.getElementById('content').scrollIntoView({ behavior: 'smooth' });">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <div class="text-box">
+            <h2>
+                🚗 Gabrielando por aí apresenta: Um roteiro pelo Noroeste da Argentina!
+            </h2>
+            <p>
+                Viajar transforma. E algumas viagens mudam a gente para sempre. Foi exatamente isso que aconteceu quando pegamos o carro e partimos rumo ao Noroeste da Argentina.
+            </p>
+            <p>
+                Foram dias intensos na estrada, atravessando montanhas coloridas, desertos surreais e vilarejos cheios de história. Cada curva revelava paisagens que pareciam tiradas de um filme. Cada parada era uma nova descoberta. E, no meio de tudo isso, encontramos algo que não estava no mapa: um tempo só nosso, para viver e sentir cada momento sem pressa.
+            </p>
+            <p>
+                Essa viagem foi tão especial que resolvemos compartilhar tudo com você! Criamos um roteiro completo e gratuito para que você possa planejar sua própria expedição, sem perder os melhores lugares, evitando perrengues e aproveitando ao máximo essa jornada incrível.
+            </p>
+            <h3>📍 O que você encontra no e-book?</h3>
+            <ul>
+                <li>✅ Roteiro de 10 dias detalhado para explorar cada cantinho do Noroeste da Argentina</li>
+                <li>✅ Dicas práticas sobre hospedagens, estradas, altitudes e planejamento</li>
+                <li>✅ Experiências autênticas e pontos imperdíveis</li>
+            </ul>
+        </div>
+        <div class="button-container">
+            <a href="https://drive.google.com/file/d/1msB1mpE1HiZYpkH89CgH_0GXBxf58HiE/view?usp=sharing" class="download-btn">🚀 Baixe agora gratuitamente</a>
+        </div>
+    </div>
+</body>
+</html>
